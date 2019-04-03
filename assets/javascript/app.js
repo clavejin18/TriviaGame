@@ -9,7 +9,10 @@ var counter = 45;
 var openScreen;
 var gameHTML;
 //arrays for game
-
+var questionArray = [];
+var answerArray = [];
+var imageArray = [];
+var correctAnswers[];
 //begin game code
 $(document).ready(function() {
 //opening page
@@ -58,6 +61,13 @@ function generateWin() {
     gameHTML = "<p class='text-center timer-p'>Time Remaining: <span class='timer'>" + counter + "</span></p>" + "<p class='text-center'>Correct! The answer is: " + correctAnswers[questionCounter] + "</p>" + imageArray[questionCounter];
     $("#gameArea").html(gameHTML);
     setTimeout(wait, 3000);
+}
+// loss function
+function generateLoss() {
+    numberIncorrect++;
+    gameHTML = "<p class='text-center timer-p'>Time Remaining: <span class='timer'>" + counter + "</span></p>" + "<p class='text-center'>Wrong! The correct answer is: "+ correctAnswers[questionCounter] + "</p>" + "<img class='center-block img-wrong' src='#'>";
+    $("#gameArea").html(gameHTML);
+    setTimeout(wait, 3000); 
 }
 // wait function
 function wait() {

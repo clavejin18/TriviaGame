@@ -24,3 +24,25 @@ h1 {
     font-size: 26px;
     height: 500px;;
   }
+  .answer {
+    height: auto;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    padding-top: 25px;
+    padding-left:15px;
+    padding-right:15px;
+    padding-bottom: 25px;
+    background-color: white;
+    border-radius: 4px;
+    opacity: .7;
+  }
+  .timer-p {
+    margin-top: 10px;
+  }
+  .img-wrong {
+    margin-top: 10px;
+    width:100%;
+  }
+  .reset-button {
+    margin-top: 40px;
+  }
