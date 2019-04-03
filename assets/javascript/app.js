@@ -12,7 +12,7 @@ var gameHTML;
 var questionArray = [];
 var answerArray = [];
 var imageArray = [];
-var correctAnswers[];
+var correctAnswers =[];
 //begin game code
 $(document).ready(function() {
 //opening page
@@ -69,6 +69,11 @@ function generateLoss() {
     $("#gameArea").html(gameHTML);
     setTimeout(wait, 3000); 
 }
+// generate questions function
+function generateQuestions() {
+    gameHTML = "<p class='text-center timer-p'>Time Remaining: <span class='timer'>30</span></p><p class='text-center'>" + questionArray[questionCounter] + "</p><p class='first-answer answer'>A. " + answerArray[questionCounter][0] + "</p><p class='answer'>B. "+answerArray[questionCounter][1]+"</p><p class='answer'>C. "+answerArray[questionCounter][2]+"</p><p class='answer'>D. "+answerArray[questionCounter][3]+"</p>";
+    $("#gameArea").html(gameHTML);
+};
 // wait function
 function wait() {
     if (questionCounter < 5) {
