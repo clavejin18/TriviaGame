@@ -16,3 +16,11 @@ h1 {
     margin-left: auto;
     width: 55%;
   }
+  #gameArea {
+    margin-top:10px;
+    max-width: 50%;
+    margin-left: auto;
+    color: black;
+    font-size: 26px;
+    height: 500px;;
+  }
